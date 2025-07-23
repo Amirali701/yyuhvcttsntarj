@@ -24,7 +24,7 @@ jobs:
         run: pyinstaller --onefile --windowed apk_test.py
 
       - name: Upload EXE
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4    # <-- اینجا تغییر کرد
         with:
           name: apk_test_exe
           path: dist/apk_test.exe
